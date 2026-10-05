@@ -73,5 +73,5 @@ These are defaults: each game's own **Key Config** can rebind them, and **Defaul
 
 * **ZUN / Team Shanghai Alice** — the Touhou Project games.
 * **Oligarchomp** — Wonderful Waking World.
-* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [YomotsuHisami](https://github.com/YomotsuHisami) (th08, th09, th10, th11 — MIT) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
+* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [YomotsuHisami](https://github.com/YomotsuHisami) (th08, th09, th10, th11 — MIT, [confirmed by the author](https://github.com/YomotsuHisami/th10/issues/3)) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
 * **Switchbrew & devkitPro** — libnx and the Switch toolchain.

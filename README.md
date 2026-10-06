@@ -1,7 +1,7 @@
 # Touhou Project on Nintendo Switch
 
 ![Platform](https://img.shields.io/badge/Platform-Nintendo%20Switch-e60012?style=for-the-badge&logo=nintendoswitch&logoColor=white)
-![Ports](https://img.shields.io/badge/Ports-6%20games%20%2B%201%20fangame-8a2be2?style=for-the-badge)
+![Ports](https://img.shields.io/badge/Ports-7%20games%20%2B%201%20fangame-8a2be2?style=for-the-badge)
 
 Native homebrew ports of the Touhou Project games for the **Nintendo Switch** (Horizon OS / Atmosphère) — no Linux, Box64 or Wine. Every port runs straight from hbmenu, uses the same controls and can live in one shared folder on the SD card.
 
@@ -19,6 +19,7 @@ Native homebrew ports of the Touhou Project games for the **Nintendo Switch** (H
 | <img width="96" alt="Touhou 9" src="https://raw.githubusercontent.com/saekaze/th09-switch/main/platform/switch/icon.jpg" /> | **Touhou 9: Phantasmagoria of Flower View**<br>東方花映塚 (2005) · needs v1.50a | 1.50a-r2 | [touhou9.nro](https://github.com/saekaze/th09-switch/releases/latest) | [th09-switch](https://github.com/saekaze/th09-switch) |
 | <img width="96" alt="Touhou 10" src="https://github.com/user-attachments/assets/d9c33e0a-3a37-4b76-a2a6-7d73729cd6b7" /> | **Touhou 10: Mountain of Faith**<br>東方風神録 (2007) · needs v1.00a | 1.00a-r5 | [touhou10.nro](https://github.com/saekaze/th10-switch/releases/latest) | [th10-switch](https://github.com/saekaze/th10-switch) |
 | <img width="96" alt="Touhou 11" src="https://raw.githubusercontent.com/saekaze/th11-switch/main/platform/switch/icon.jpg" /> | **Touhou 11: Subterranean Animism**<br>東方地霊殿 (2008) · needs v1.00a | 1.00a-r3 | [touhou11.nro](https://github.com/saekaze/th11-switch/releases/latest) | [th11-switch](https://github.com/saekaze/th11-switch) |
+| <img width="96" alt="Touhou 15" src="https://raw.githubusercontent.com/saekaze/th15-switch/main/platform/switch/icon.jpg" /> | **Touhou 15: Legacy of Lunatic Kingdom**<br>東方紺珠伝 (2015) · needs v1.00b<br>⏳ *The first launch is long (it builds the text font once) — after that it's fine.* | 1.00b-r1 | [touhou15.nro](https://github.com/saekaze/th15-switch/releases/latest) | [th15-switch](https://github.com/saekaze/th15-switch) |
 
 ## 🌙 Fan games
 
@@ -39,10 +40,15 @@ sd:/switch/touhou/
     ├── touhou8/     touhou8.nro  + th08.dat, thbgm.dat
     ├── touhou9/     touhou9.nro  + th09.dat, thbgm.dat
     ├── touhou10/    touhou10.nro + th10.dat, thbgm.dat
-    └── touhou11/    touhou11.nro + th11.dat, thbgm.dat
+    ├── touhou11/    touhou11.nro + th11.dat, thbgm.dat
+    └── touhou15/    touhou15.nro + th15.dat, thbgm.dat
 ```
 
-Add `msgothic.ttc` (from `C:\Windows\Fonts`) to each folder for the original Japanese font; without it the Switch's own Japanese font is used. Each port always checks its own folder first, and older layouts (`sd:/switch/th08/`, `sd:/touhou10/` …) keep working. See each repository's README for the exact files.
+Add `msgothic.ttc` (from `C:\Windows\Fonts`) to each folder for the original Japanese font; without it the Switch's own Japanese font is used.
+
+> ⏳ **Touhou 15's first launch takes much longer than usual.** Its text needs Windows fonts that aren't in the game files, so the port builds the font from `msgothic.ttc` (about 7,500 characters in 8 sizes) and saves it as `fontcache/` (~55 MB). Let the loading bar finish — every launch after that loads the saved font and is quick.
+
+Each port always checks its own folder first, and older layouts (`sd:/switch/th08/`, `sd:/touhou10/` …) keep working. See each repository's README for the exact files.
 
 *Wonderful Waking World uses its own layout (`sd:/switch/thwww/`) — see its README.*
 
@@ -73,5 +79,5 @@ These are defaults: each game's own **Key Config** can rebind them, and **Defaul
 
 * **ZUN / Team Shanghai Alice** — the Touhou Project games.
 * **Oligarchomp** — Wonderful Waking World.
-* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [YomotsuHisami](https://github.com/YomotsuHisami) (th08, th09, th10, th11 — MIT, [confirmed by the author](https://github.com/YomotsuHisami/th10/issues/3)) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
+* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [YomotsuHisami](https://github.com/YomotsuHisami) (th08, th09, th10, th11 — MIT, [confirmed by the author](https://github.com/YomotsuHisami/th10/issues/3)), [SteinsGateON](https://space.bilibili.com/34714121) (th15, MIT, published by [YomotsuHisami](https://github.com/YomotsuHisami/th15)) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
 * **Switchbrew & devkitPro** — libnx and the Switch toolchain.

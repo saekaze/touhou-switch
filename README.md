@@ -25,7 +25,7 @@ Native homebrew ports of the Touhou Project games for the **Nintendo Switch** (H
 
 | | Game | Download | Source |
 | :---: | :--- | :---: | :---: |
-| <img width="96" alt="Wonderful Waking World" src="https://raw.githubusercontent.com/saekaze/thWWW-switch/main/assets/icon.jpg" /> | **東方眠世界 ~ Wonderful Waking World** by Oligarchomp · needs the free 1.0.1 release from [itch.io](https://oligarchomp.itch.io/wonderful-waking-world)<br>Remappable controls · overclock recommended for Lunatic (hardest spell cards run at ~55 FPS at stock clocks) | [thwww.nro](https://github.com/saekaze/thWWW-switch/releases) | [thWWW-switch](https://github.com/saekaze/thWWW-switch) |
+| <img width="96" alt="Wonderful Waking World" src="https://raw.githubusercontent.com/saekaze/thWWW-switch/main/assets/icon.jpg" /> | **東方眠世界 ~ Wonderful Waking World** by Oligarchomp · needs the free 1.0.1 release from [itch.io](https://oligarchomp.itch.io/wonderful-waking-world) | [thwww.nro](https://github.com/saekaze/thWWW-switch/releases) | [thWWW-switch](https://github.com/saekaze/thWWW-switch) |
 
 ---
 

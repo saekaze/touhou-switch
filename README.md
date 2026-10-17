@@ -1,7 +1,7 @@
 # Touhou Project on Nintendo Switch
 
 ![Platform](https://img.shields.io/badge/Platform-Nintendo%20Switch-e60012?style=for-the-badge&logo=nintendoswitch&logoColor=white)
-![Ports](https://img.shields.io/badge/Ports-7%20games%20%2B%201%20fangame-8a2be2?style=for-the-badge)
+![Ports](https://img.shields.io/badge/Ports-8%20games%20%2B%201%20fangame-8a2be2?style=for-the-badge)
 
 Native homebrew ports of the Touhou Project games for the **Nintendo Switch** (Horizon OS / Atmosphère) — no Linux, Box64 or Wine. Every port runs straight from hbmenu, uses the same controls and can live in one shared folder on the SD card.
 
@@ -15,6 +15,7 @@ Native homebrew ports of the Touhou Project games for the **Nintendo Switch** (H
 | :---: | :--- | :---: | :---: | :---: |
 | <img width="96" alt="Touhou 6" src="https://github.com/user-attachments/assets/f7d4ce1a-acb3-49a5-b952-2fae2df142b3" /> | **Touhou 6: the Embodiment of Scarlet Devil**<br>東方紅魔郷 (2002) · needs v1.02h | 1.02h-r2 | [touhou6.nro](https://github.com/saekaze/th06-switch/releases/latest) | [th06-switch](https://github.com/saekaze/th06-switch) |
 | <img width="96" alt="Touhou 7" src="https://github.com/user-attachments/assets/d1fed52e-2bad-4d12-acb7-7104aa4129bc" /> | **Touhou 7: Perfect Cherry Blossom**<br>東方妖々夢 (2003) · needs v1.00b | 1.00b-r5 | [touhou7.nro](https://github.com/saekaze/th07-switch/releases/latest) | [th07-switch](https://github.com/saekaze/th07-switch) |
+| <img width="96" alt="Touhou 7.5" src="https://raw.githubusercontent.com/saekaze/th075-switch/main/platform/switch/icon.jpg" /> | **Touhou 7.5: Immaterial and Missing Power**<br>東方萃夢想 (2004, with Twilight Frontier) · needs ver1.11<br>🥊 *Fighting game — local 2-player: Joy-Cons and a Pro Controller.* | 1.11-r1 | [touhou075.nro](https://github.com/saekaze/th075-switch/releases/latest) | [th075-switch](https://github.com/saekaze/th075-switch) |
 | <img width="96" alt="Touhou 8" src="https://github.com/user-attachments/assets/57d8c201-1bc7-4ac9-af62-d41f41f9c7e0" /> | **Touhou 8: Imperishable Night**<br>東方永夜抄 (2004) · needs v1.00d | 1.00d-r4 | [touhou8.nro](https://github.com/saekaze/th08-switch/releases/latest) | [th08-switch](https://github.com/saekaze/th08-switch) |
 | <img width="96" alt="Touhou 9" src="https://raw.githubusercontent.com/saekaze/th09-switch/main/platform/switch/icon.jpg" /> | **Touhou 9: Phantasmagoria of Flower View**<br>東方花映塚 (2005) · needs v1.50a | 1.50a-r2 | [touhou9.nro](https://github.com/saekaze/th09-switch/releases/latest) | [th09-switch](https://github.com/saekaze/th09-switch) |
 | <img width="96" alt="Touhou 10" src="https://github.com/user-attachments/assets/d9c33e0a-3a37-4b76-a2a6-7d73729cd6b7" /> | **Touhou 10: Mountain of Faith**<br>東方風神録 (2007) · needs v1.00a | 1.00a-r5 | [touhou10.nro](https://github.com/saekaze/th10-switch/releases/latest) | [th10-switch](https://github.com/saekaze/th10-switch) |
@@ -37,6 +38,7 @@ Put every game in its own folder inside `sd:/switch/touhou/` — much tidier tha
 sd:/switch/touhou/
     ├── touhou6/     touhou6.nro  + 紅魔郷CM.DAT … (+ bgm/ for music)
     ├── touhou7/     touhou7.nro  + th07.dat, thbgm.dat
+    ├── touhou075/   touhou075.nro + th075.dat, th075b.dat, th075bgm.dat
     ├── touhou8/     touhou8.nro  + th08.dat, thbgm.dat
     ├── touhou9/     touhou9.nro  + th09.dat, thbgm.dat
     ├── touhou10/    touhou10.nro + th10.dat, thbgm.dat
@@ -65,6 +67,8 @@ Each port always checks its own folder first, and older layouts (`sd:/switch/th0
 
 These are defaults: each game's own **Key Config** can rebind them, and **Default** there brings this layout back. The D-Pad and sticks only move.
 
+**Touhou 7.5** is a fighting game: **B** / **A** / **Y** / **X** are its A / B / C / D buttons (weak, strong, spell card, dash; L/ZL and R/ZR also give C and D), **+** pauses. The Joy-Cons are player 1, a Pro Controller player 2.
+
 ## 🖥 Common features
 
 * 60 FPS on every Switch model, native ARM64 code.
@@ -77,8 +81,8 @@ These are defaults: each game's own **Key Config** can rebind them, and **Defaul
 
 ## 🤝 Credits
 
-* **ZUN / Team Shanghai Alice** — the Touhou Project games.
+* **ZUN / Team Shanghai Alice** — the Touhou Project games; **Twilight Frontier** — co-developer of Immaterial and Missing Power.
 * **Oligarchomp** — Wonderful Waking World.
-* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [YomotsuHisami](https://github.com/YomotsuHisami) (th08, th09, th10, th11 — MIT, [confirmed by the author](https://github.com/YomotsuHisami/th10/issues/3)), [SteinsGateON](https://space.bilibili.com/34714121) (th15, MIT, published by [YomotsuHisami](https://github.com/YomotsuHisami/th15)) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
+* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [YomotsuHisami](https://github.com/YomotsuHisami) (th08, th09, th10, th11 — MIT, [confirmed by the author](https://github.com/YomotsuHisami/th10/issues/3)), [SteinsGateON](https://space.bilibili.com/34714121) (th15, MIT, published by [YomotsuHisami](https://github.com/YomotsuHisami/th15); th075, MIT, published by [Goan114](https://github.com/Goan114/th075)) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
 * **[シエル](https://github.com/kan8223-dotcom/th10-psp-native)** (native PSP ports of Touhou) — worked out how the PC game builds its 少女祈祷中 loading screen and shared the code from their TH15 PSP port; Touhou 15 uses it since 1.00b-r3.
 * **Switchbrew & devkitPro** — libnx and the Switch toolchain.

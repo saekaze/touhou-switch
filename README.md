@@ -1,7 +1,7 @@
 # Touhou Project on Nintendo Switch
 
 ![Platform](https://img.shields.io/badge/Platform-Nintendo%20Switch-e60012?style=for-the-badge&logo=nintendoswitch&logoColor=white)
-![Ports](https://img.shields.io/badge/Ports-9%20games%20%2B%201%20fangame-8a2be2?style=for-the-badge)
+![Ports](https://img.shields.io/badge/Ports-10%20games%20%2B%201%20fangame-8a2be2?style=for-the-badge)
 
 Native homebrew ports of the Touhou Project games for the **Nintendo Switch** (Horizon OS / Atmosphère) — no Linux, Box64 or Wine. Every port runs straight from hbmenu, uses the same controls and can live in one shared folder on the SD card.
 
@@ -22,6 +22,7 @@ Native homebrew ports of the Touhou Project games for the **Nintendo Switch** (H
 | <img width="96" alt="Touhou 11" src="https://raw.githubusercontent.com/saekaze/th11-switch/main/platform/switch/icon.jpg" /> | **Touhou 11: Subterranean Animism**<br>東方地霊殿 (2008) · needs v1.00a | 1.00a-r3 | [touhou11.nro](https://github.com/saekaze/th11-switch/releases/latest) | [th11-switch](https://github.com/saekaze/th11-switch) |
 | <img width="96" alt="Touhou 12" src="https://raw.githubusercontent.com/saekaze/th12-switch/main/platform/switch/icon.jpg" /> | **Touhou 12: Undefined Fantastic Object**<br>東方星蓮船 (2009) · needs v1.00b | 1.00b-r2 | [touhou12.nro](https://github.com/saekaze/th12-switch/releases/latest) | [th12-switch](https://github.com/saekaze/th12-switch) |
 | <img width="96" alt="Touhou 15" src="https://raw.githubusercontent.com/saekaze/th15-switch/main/platform/switch/icon.jpg" /> | **Touhou 15: Legacy of Lunatic Kingdom**<br>東方紺珠伝 (2015) · needs v1.00b<br>⏳ *The first launch is long (it builds the text font once) — after that it's fine.* | 1.00b-r3 | [touhou15.nro](https://github.com/saekaze/th15-switch/releases/latest) | [th15-switch](https://github.com/saekaze/th15-switch) |
+| <img width="96" alt="Touhou 17" src="https://raw.githubusercontent.com/saekaze/th17-switch/main/platform/switch/icon.jpg" /> | **Touhou 17: Wily Beast and Weakest Creature**<br>東方鬼形獣 (2019) · needs v1.00b | 1.00b-r1 | [touhou17.nro](https://github.com/saekaze/th17-switch/releases/latest) | [th17-switch](https://github.com/saekaze/th17-switch) |
 
 ## 🌙 Fan games
 
@@ -45,10 +46,11 @@ sd:/switch/touhou/
     ├── touhou10/    touhou10.nro + th10.dat, thbgm.dat
     ├── touhou11/    touhou11.nro + th11.dat, thbgm.dat
     ├── touhou12/    touhou12.nro + th12.exe, th12.dat, thbgm.dat
-    └── touhou15/    touhou15.nro + th15.dat, thbgm.dat
+    ├── touhou15/    touhou15.nro + th15.dat, thbgm.dat
+    └── touhou17/    touhou17.nro + th17.dat, thbgm.dat, msgothic.ttc
 ```
 
-Add `msgothic.ttc` (from `C:\Windows\Fonts`) to each folder for the original Japanese font; without it the Switch's own Japanese font is used.
+Add `msgothic.ttc` (from `C:\Windows\Fonts`) to each folder for the original Japanese font; without it the Switch's own Japanese font is used. **Touhou 17** needs it: its menu and dialogue text is drawn from `msgothic.ttc` only.
 
 **Touhou 12** also needs its `th12.exe` (the original 1.00b, not a patcher's launcher) in the folder: the port reads the sound and bullet tables from it. Its `scoreth12.dat`, `th12.cfg` and `replay/` are in the PC formats, so you can copy them between the PC and the Switch.
 
@@ -87,6 +89,6 @@ These are defaults: each game's own **Key Config** can rebind them, and **Defaul
 
 * **ZUN / Team Shanghai Alice** — the Touhou Project games; **Twilight Frontier** — co-developer of Immaterial and Missing Power.
 * **Oligarchomp** — Wonderful Waking World.
-* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [Ritosa2333](https://github.com/Ritosa2333) (th08, th09, th10, th11 — MIT, [confirmed by the author](https://github.com/Ritosa2333/th10/issues/3)), [SteinsGateON](https://space.bilibili.com/34714121) (th15, MIT, published by [Ritosa2333](https://github.com/Ritosa2333/th15); th075, MIT, published by [Goan114](https://github.com/Goan114/th075)), [Tweet-META](https://github.com/Tweet-META/th12) (th12, MIT, also published by [Ritosa2333](https://github.com/Ritosa2333/th12)) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
+* The reconstructions these ports are built on: [GensokyoClub/th06](https://github.com/GensokyoClub/th06), [some100/th07](https://github.com/some100/th07), [Ritosa2333](https://github.com/Ritosa2333) (th08, th09, th10, th11 — MIT, [confirmed by the author](https://github.com/Ritosa2333/th10/issues/3)), [SteinsGateON](https://space.bilibili.com/34714121) (th15, MIT, published by [Ritosa2333](https://github.com/Ritosa2333/th15); th075, MIT, published by [Goan114](https://github.com/Goan114/th075)), [Tweet-META](https://github.com/Tweet-META/th12) (th12, MIT, also published by [Ritosa2333](https://github.com/Ritosa2333/th12)), [eagler-touhou](https://github.com/Ritosa2333/eagler-touhou) (th17's C++ runtime, Ritosa2333 and contributors) and the [Butterscotch](https://github.com/ButterscotchRunner/Butterscotch) GameMaker runner.
 * **[シエル](https://github.com/kan8223-dotcom/th10-psp-native)** (native PSP ports of Touhou) — worked out how the PC game builds its 少女祈祷中 loading screen and shared the code from their TH15 PSP port; Touhou 15 uses it since 1.00b-r3.
 * **Switchbrew & devkitPro** — libnx and the Switch toolchain.
